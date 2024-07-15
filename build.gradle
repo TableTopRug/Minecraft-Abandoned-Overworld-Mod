@@ -114,3 +114,10 @@ publishing {
         }
     }
 }
+
+//PLEASE REMEMBER TO TELL PEOPLE ABOUT THIS AAAAA
+sourceSets {
+    main {
+        output.resourcesDir = output.classesDir
+    }
+}
