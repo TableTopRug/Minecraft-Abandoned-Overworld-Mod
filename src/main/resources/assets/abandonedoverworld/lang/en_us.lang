@@ -1,0 +1,6 @@
+#Items
+item.torch_obscura.name=Obscura Torch
+
+#Blocks
+tile.ore_obscura.name=Obscura Ore
+tile.pedestal.name=Pedestal

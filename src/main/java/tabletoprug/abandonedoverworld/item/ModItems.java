@@ -8,11 +8,11 @@ import tabletoprug.abandonedoverworld.AbandonedOverworld;
 
 public class ModItems {
 
-    public static final ItemBase OBSCURING_TORCH = new ItemBase("obscuring_torch").setCreativeTab(CreativeTabs.MISC);
+    public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura").setCreativeTab(CreativeTabs.MISC);
 
 
     public static final ItemBase[] ALL_MOD_ITEMS = {
-            OBSCURING_TORCH
+            OBSCURA_TORCH
     };
 
     public static void register(IForgeRegistry<Item> registry) {

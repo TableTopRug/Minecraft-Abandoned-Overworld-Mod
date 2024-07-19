@@ -1,14 +1,14 @@
 [
 {
   "modid": "abandonedoverworld",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "name": "Abandoned Overworld",
+  "description": "A mod that adds more traces of a prior civilization to Minecraft's Overworld",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["TableTopRug"],
+  "credits": "The Forge and FML guys, for making the example I used",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

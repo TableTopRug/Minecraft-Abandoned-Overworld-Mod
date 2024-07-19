@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "normal": {
+      "model": "abandonedoverworld:pedestal"
+    },
+    "inventory": {
+      "model": "abandonedoverworld:pedestal",
+      "transform": "forge:default-block"
+    }
+  }
+}
