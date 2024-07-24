@@ -10,7 +10,7 @@ import java.util.Arrays;
 
 public class ModBlocks {
 
-    public static BlockOre oreObscura = new BlockOre("ore_obscura");
+    public static BlockOre oreObscura = new BlockOre("ore_obscura", "oreObscura");
 
     public static BlockPedestal pedestal = new BlockPedestal();
 

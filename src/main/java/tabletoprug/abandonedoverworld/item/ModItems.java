@@ -12,7 +12,7 @@ public class ModItems {
 
 
     public static final ItemBase[] ALL_MOD_ITEMS = {
-            OBSCURA_TORCH
+            OBSCURA_TORCH,
     };
 
     public static void register(IForgeRegistry<Item> registry) {

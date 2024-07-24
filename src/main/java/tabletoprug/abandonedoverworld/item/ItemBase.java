@@ -11,8 +11,10 @@ public class ItemBase extends Item {
 
     public ItemBase(String name) {
         this.name = name;
+
         setUnlocalizedName(name);
         setRegistryName(name);
+        setCreativeTab(AbandonedOverworld.TAB);
     }
 
     public void registerItemModel() {
