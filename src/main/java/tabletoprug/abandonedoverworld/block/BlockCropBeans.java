@@ -5,21 +5,21 @@ import net.minecraft.item.Item;
 import tabletoprug.abandonedoverworld.item.ModItems;
 
 
-public class BlockCropCorn extends BlockCrops {
+public class BlockCropBeans extends BlockCrops {
 
-    public BlockCropCorn() {
-        setUnlocalizedName("crop_corn");
-        setRegistryName("crop_corn");
+    public BlockCropBeans() {
+        setUnlocalizedName("crop_beans");
+        setRegistryName("crop_beans");
     }
 
     @Override
     protected Item getSeed() {
-        return ModItems.cornSeed;
+        return ModItems.BEANS_SEED;
     }
 
     @Override
     protected Item getCrop() {
-        return ModItems.corn;
+        return ModItems.BEANS;
     }
 
 }

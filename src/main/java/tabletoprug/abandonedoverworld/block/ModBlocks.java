@@ -14,10 +14,13 @@ public class ModBlocks {
 
     public static BlockPedestal pedestal = new BlockPedestal();
 
+    public static BlockCropBeans cropBeans = new BlockCropBeans();
 
-    public static BlockBase[] ALL_MOD_BLOCKS = new BlockBase[] {
+
+    public static Block[] ALL_MOD_BLOCKS = new Block[] {
             oreObscura,
-            pedestal
+            pedestal,
+            cropBeans
     };
 
 
@@ -26,11 +29,15 @@ public class ModBlocks {
     }
 
     public static void registerItemBlocks(IForgeRegistry<Item> registry) {
-        Arrays.stream(ALL_MOD_BLOCKS).forEach(block -> registry.register(block.setCreativeTab(CreativeTabs.MATERIALS).createItemBlock()));
+        Arrays.stream(ALL_MOD_BLOCKS)
+                .filter(block -> BlockBase.class.isAssignableFrom(block.getClass()))
+                .forEach(block -> registry.register(((BlockBase)block).setCreativeTab(CreativeTabs.MATERIALS).createItemBlock()));
     }
 
     public static void registerModels() {
-        Arrays.stream(ALL_MOD_BLOCKS).forEach(block -> block.registerItemModel(Item.getItemFromBlock(block)));
+        Arrays.stream(ALL_MOD_BLOCKS)
+                .filter(block -> BlockBase.class.isAssignableFrom(block.getClass()))
+                .forEach(block -> ((BlockBase) block).registerItemModel(Item.getItemFromBlock(block)));
 //        oreObscura.registerItemModel(Item.getItemFromBlock(oreObscura));
     }
 

@@ -9,10 +9,15 @@ import tabletoprug.abandonedoverworld.AbandonedOverworld;
 public class ModItems {
 
     public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura").setCreativeTab(CreativeTabs.MISC);
+    public static final ItemBase BEANS = new ItemBase("beans").setCreativeTab(CreativeTabs.FOOD);
+
+    public static ItemBeansSeed BEANS_SEED = new ItemBeansSeed();
 
 
-    public static final ItemBase[] ALL_MOD_ITEMS = {
+    public static final Item[] ALL_MOD_ITEMS = {
             OBSCURA_TORCH,
+            BEANS_SEED,
+            BEANS,
     };
 
     public static void register(IForgeRegistry<Item> registry) {
@@ -20,8 +25,10 @@ public class ModItems {
     }
 
     public static void registerModels() {
-        for (ItemBase modItem : ALL_MOD_ITEMS) {
-            modItem.registerItemModel();
+        for (Item modItem : ALL_MOD_ITEMS) {
+            if (modItem.getClass().isAssignableFrom(ItemModelProvider.class)) {
+                ((ItemModelProvider) modItem).registerItemModel();
+            }
             AbandonedOverworld.logger.info("Registered " + modItem.getUnlocalizedName() + " at " + modItem.getRegistryName().getResourcePath());
         }
     }

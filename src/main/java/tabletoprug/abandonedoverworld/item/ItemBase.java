@@ -6,7 +6,7 @@ import net.minecraftforge.client.model.ModelLoader;
 import tabletoprug.abandonedoverworld.AbandonedOverworld;
 
 
-public class ItemBase extends Item {
+public class ItemBase extends Item implements ItemModelProvider {
     protected String name;
 
     public ItemBase(String name) {

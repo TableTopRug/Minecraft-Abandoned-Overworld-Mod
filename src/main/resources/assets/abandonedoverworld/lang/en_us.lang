@@ -1,5 +1,9 @@
 #Items
+item.corn.name=Corn
+item.corn_seed.name=Corn Seed
+
 item.torch_obscura.name=Obscura Torch
+
 
 #Blocks
 tile.ore_obscura.name=Obscura Ore
