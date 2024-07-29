@@ -8,8 +8,8 @@ import tabletoprug.abandonedoverworld.AbandonedOverworld;
 
 public class ModItems {
 
-    public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura").setCreativeTab(CreativeTabs.MISC);
-    public static final ItemBase BEANS = new ItemBase("beans").setCreativeTab(CreativeTabs.FOOD);
+    public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura");
+    public static final ItemBase BEANS = new ItemBase("beans");
 
     public static ItemBeansSeed BEANS_SEED = new ItemBeansSeed();
 

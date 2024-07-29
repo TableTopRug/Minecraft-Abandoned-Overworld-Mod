@@ -14,6 +14,7 @@ public class ItemBeansSeed extends ItemSeeds implements ItemModelProvider {
 
         setUnlocalizedName("beans_seed");
         setRegistryName("beans_seed");
+        setCreativeTab(AbandonedOverworld.TAB);
     }
 
     public void registerItemModel() {

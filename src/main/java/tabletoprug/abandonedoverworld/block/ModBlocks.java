@@ -31,7 +31,7 @@ public class ModBlocks {
     public static void registerItemBlocks(IForgeRegistry<Item> registry) {
         Arrays.stream(ALL_MOD_BLOCKS)
                 .filter(block -> BlockBase.class.isAssignableFrom(block.getClass()))
-                .forEach(block -> registry.register(((BlockBase)block).setCreativeTab(CreativeTabs.MATERIALS).createItemBlock()));
+                .forEach(block -> registry.register(((BlockBase)block).createItemBlock()));
     }
 
     public static void registerModels() {
