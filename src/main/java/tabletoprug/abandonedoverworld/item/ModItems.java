@@ -10,11 +10,13 @@ public class ModItems {
 
     public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura");
     public static final ItemBase BEANS = new ItemBase("beans");
+    public static final ItemBase OBSCURA_DUST = new ItemBase("dust_obscura");
 
     public static ItemBeansSeed BEANS_SEED = new ItemBeansSeed();
 
 
     public static final Item[] ALL_MOD_ITEMS = {
+            OBSCURA_DUST,
             OBSCURA_TORCH,
             BEANS_SEED,
             BEANS,
@@ -26,7 +28,7 @@ public class ModItems {
 
     public static void registerModels() {
         for (Item modItem : ALL_MOD_ITEMS) {
-            if (modItem.getClass().isAssignableFrom(ItemModelProvider.class)) {
+            if (ItemModelProvider.class.isAssignableFrom(modItem.getClass())) {
                 ((ItemModelProvider) modItem).registerItemModel();
             }
             AbandonedOverworld.logger.info("Registered " + modItem.getUnlocalizedName() + " at " + modItem.getRegistryName().getResourcePath());

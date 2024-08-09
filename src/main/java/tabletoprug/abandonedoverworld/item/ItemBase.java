@@ -17,6 +17,7 @@ public class ItemBase extends Item implements ItemModelProvider {
         setCreativeTab(AbandonedOverworld.TAB);
     }
 
+    @Override
     public void registerItemModel() {
         AbandonedOverworld.proxy.registerItemRenderer(this, 0, name);
     }

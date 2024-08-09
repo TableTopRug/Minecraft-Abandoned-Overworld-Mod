@@ -17,6 +17,7 @@ public class ItemBeansSeed extends ItemSeeds implements ItemModelProvider {
         setCreativeTab(AbandonedOverworld.TAB);
     }
 
+    @Override
     public void registerItemModel() {
         AbandonedOverworld.proxy.registerItemRenderer(this, 0, "beans_seed");
     }

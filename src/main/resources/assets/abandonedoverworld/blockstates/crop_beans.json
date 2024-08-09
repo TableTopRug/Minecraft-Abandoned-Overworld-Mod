@@ -7,42 +7,42 @@
     "age": {
       "0": {
         "textures": {
-          "cross": "tutorial:blocks/beans/0"
+          "cross": "abandonedoverworld:blocks/beans/0"
         }
       },
       "1": {
         "textures": {
-          "cross": "tutorial:blocks/beans/1"
+          "cross": "abandonedoverworld:blocks/beans/1"
         }
       },
       "2": {
         "textures": {
-          "cross": "tutorial:blocks/beans/2"
+          "cross": "abandonedoverworld:blocks/beans/2"
         }
       },
       "3": {
         "textures": {
-          "cross": "tutorial:blocks/beans/3"
+          "cross": "abandonedoverworld:blocks/beans/3"
         }
       },
       "4": {
         "textures": {
-          "cross": "tutorial:blocks/beans/4"
+          "cross": "abandonedoverworld:blocks/beans/4"
         }
       },
       "5": {
         "textures": {
-          "cross": "tutorial:blocks/beans/5"
+          "cross": "abandonedoverworld:blocks/beans/5"
         }
       },
       "6": {
         "textures": {
-          "cross": "tutorial:blocks/beans/6"
+          "cross": "abandonedoverworld:blocks/beans/6"
         }
       },
       "7": {
         "textures": {
-          "cross": "tutorial:blocks/beans/7"
+          "cross": "abandonedoverworld:blocks/beans/7"
         }
       }
     }

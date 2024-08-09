@@ -1,10 +1,12 @@
-#Items
-item.corn.name=Corn
-item.corn_seed.name=Corn Seed
-
-item.torch_obscura.name=Obscura Torch
-
-
 #Blocks
 tile.ore_obscura.name=Obscura Ore
 tile.pedestal.name=Pedestal
+
+
+#Items
+item.beans.name=Beans
+item.beans_seed.name=Beans Seed
+
+item.dust_obscura.name=Obscura Dust
+
+item.torch_obscura.name=Obscura Torch
