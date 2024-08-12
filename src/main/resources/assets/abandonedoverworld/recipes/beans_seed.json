@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "abandonedoverworld:beans"
+    }
+  ],
+  "result": {
+    "item": "abandonedoverworld:beans_seed"
+  }
+}
