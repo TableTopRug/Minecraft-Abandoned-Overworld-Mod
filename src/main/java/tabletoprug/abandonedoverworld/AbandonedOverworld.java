@@ -10,6 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 import tabletoprug.abandonedoverworld.client.AbandonedOverworldTab;
 import tabletoprug.abandonedoverworld.proxy.CommonProxy;
+import tabletoprug.abandonedoverworld.recipes.ModRecipes;
 
 
 @Mod(modid = AbandonedOverworld.MODID, name = AbandonedOverworld.NAME, version = AbandonedOverworld.VERSION, acceptedMinecraftVersions = AbandonedOverworld.MC_VERSION)
@@ -36,8 +37,9 @@ public class AbandonedOverworld {
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
-        // some example code
         logger.info(AbandonedOverworld.NAME + " loading");
+
+        ModRecipes.init();
     }
 
     @EventHandler
