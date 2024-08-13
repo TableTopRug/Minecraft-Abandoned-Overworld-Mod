@@ -9,8 +9,9 @@ import tabletoprug.abandonedoverworld.AbandonedOverworld;
 public class ModItems {
 
     public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura");
-    public static final ItemBase BEANS = new ItemBase("beans");
-    public static final ItemBase OBSCURA_DUST = new ItemBase("dust_obscura");
+
+    public static final ItemOre OBSCURA_DUST = new ItemOre("dust_obscura", "dustObscura");
+    public static final ItemOre BEANS = new ItemOre("beans", "cropBeans");
 
     public static ItemBeansSeed BEANS_SEED = new ItemBeansSeed();
 
