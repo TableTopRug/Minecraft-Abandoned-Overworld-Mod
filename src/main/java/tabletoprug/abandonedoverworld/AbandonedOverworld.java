@@ -7,17 +7,19 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 import tabletoprug.abandonedoverworld.client.AbandonedOverworldTab;
 import tabletoprug.abandonedoverworld.proxy.CommonProxy;
 import tabletoprug.abandonedoverworld.recipes.ModRecipes;
+import tabletoprug.abandonedoverworld.world.ModWorldGen;
 
 
 @Mod(modid = AbandonedOverworld.MODID, name = AbandonedOverworld.NAME, version = AbandonedOverworld.VERSION, acceptedMinecraftVersions = AbandonedOverworld.MC_VERSION)
 public class AbandonedOverworld {
     public static final String MODID = "abandonedoverworld";
     public static final String NAME = "Abandoned Overworld";
-    public static final String VERSION = "0.8.1";
+    public static final String VERSION = "0.9.0";
     public static final String MC_VERSION = "[1.12.2]";
     public static final AbandonedOverworldTab TAB = new AbandonedOverworldTab();
 
@@ -33,6 +35,8 @@ public class AbandonedOverworld {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
+
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 3);
     }
 
     @EventHandler
