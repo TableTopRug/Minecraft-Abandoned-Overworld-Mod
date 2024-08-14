@@ -17,7 +17,7 @@ import tabletoprug.abandonedoverworld.recipes.ModRecipes;
 public class AbandonedOverworld {
     public static final String MODID = "abandonedoverworld";
     public static final String NAME = "Abandoned Overworld";
-    public static final String VERSION = "0.8.0";
+    public static final String VERSION = "0.8.1";
     public static final String MC_VERSION = "[1.12.2]";
     public static final AbandonedOverworldTab TAB = new AbandonedOverworldTab();
 

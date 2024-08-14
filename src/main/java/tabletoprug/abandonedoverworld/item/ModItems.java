@@ -11,7 +11,8 @@ public class ModItems {
     public static final ItemBase OBSCURA_TORCH = new ItemBase("torch_obscura");
 
     public static final ItemOre OBSCURA_DUST = new ItemOre("dust_obscura", "dustObscura");
-    public static final ItemOre BEANS = new ItemOre("beans", "cropBeans");
+
+    public static final ItemBeans BEANS = new ItemBeans();
 
     public static ItemBeansSeed BEANS_SEED = new ItemBeansSeed();
 
