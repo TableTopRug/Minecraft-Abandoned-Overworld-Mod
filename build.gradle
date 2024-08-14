@@ -12,6 +12,7 @@ apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+apply plugin: 'signing'
 
 // MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH
 version = '1.12.2-0.0.9.0'
@@ -122,3 +123,28 @@ sourceSets {
         output.resourcesDir = output.classesDir
     }
 }
+
+// add a task to sign the jars
+signing {
+    sign publishing.publications
+}
+
+task signJar(dependsOn: 'jar') {
+    doLast{
+        println ":$project.name:${name}"
+        def signdir  = new File("$buildDir/jars/signed")
+        signdir.mkdirs()
+        ant.signjar(
+                destDir: "${signdir.absolutePath}",
+                jar: 'build/jars/*.jar',
+                alias:providers.getProperties("alias"),
+                storetype:"jks",
+                keystore:providers.getProperties("keyStore"),
+                storepass:providers.getProperties("storePass"),
+                verbose:true,
+                preservelastmodified:"true"
+        )
+    }
+}
+
+build.dependsOn signJar

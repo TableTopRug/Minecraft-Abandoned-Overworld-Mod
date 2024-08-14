@@ -1,16 +1,16 @@
 [
-{
-  "modid": "abandonedoverworld",
-  "name": "Abandoned Overworld",
-  "description": "A mod that adds more traces of a prior civilization to Minecraft's Overworld",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["TableTopRug"],
-  "credits": "The Forge and FML guys, for making the example I used",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "abandonedoverworld",
+    "name": "Abandoned Overworld",
+    "description": "A mod that adds more traces of a prior civilization to Minecraft's Overworld",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateJSON": "",
+    "authorList": ["TableTopRug"],
+    "credits": "The Forge and FML guys, for making the example I used",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
 ]
